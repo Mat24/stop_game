@@ -22,3 +22,7 @@ class Categoria:
       if elemento == termino:
         return True
     return False
+  
+  def realizar_pregunta(self, nombre_jugador, letra_a_jugar):
+    respuesta = input("Porfavor escribe un %s que inicie con la letra %s ! : " % (self.get_nombre_categoria(), letra_a_jugar))
+    return respuesta
