@@ -4,6 +4,7 @@
     es decir:
     - nombre: cada jugador se identifica por un nombre
     - puntos: cada jugador lleva la "contabilizacion" de sus puntos (por defecto son cero)
+    - respuestas: diccionario que contiene todas las respuestas que da un determinado jugador en cada categoria
 """
 
 class Jugador:

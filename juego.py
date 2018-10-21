@@ -13,16 +13,17 @@ from stop import Stop
 # Aca se definene todas las palabras que van a ser analizadas por aca una de las categorias
 configuracion = {
   "nombres": ["ana", "alana", "angelica", "anyela"],
-  "apellidos": [],
-  "ciudades": [],
-  "frutas": [],
-  "colores": []
+  "apellidos": ["aristi", "aristizabal", "alvarez", "aya"],
+  "ciudades": ["armenia", "atenas"],
+  "frutas": ["acerula", "araza"],
+  "colores": ["amarillo", "azul", "arena"]
   # todas las categorias que se requieran configurar....
 }
 
 total_jugadores = int(input("Hola! en el dia de hoy cuantas personas jugaremos? (numero de jugadores?):"))
 numero_jugador = 1
 jugadores = []
+# Dado un numero total de jugadores, pide el nombre a cada uno de ellos
 while numero_jugador <= total_jugadores:
   nombre_jugador = input("Hola! jugador #%i, porfavor escribe tu nombre: " % numero_jugador)
   jugadores.append(Jugador(nombre_jugador, 0))
