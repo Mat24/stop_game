@@ -46,7 +46,7 @@ class Stop:
           pass
         else:
           # Si el termino a computar, no es valido (no existe o no aplica), no se tiene en cuenta en el computo
-          return
+          continue
         if termino in diccionario_respuestas:
           # si esta, suma 1 al total y agrega dicho jugador a esa respuesta
           diccionario_respuestas[termino]["cantidad"] =  diccionario_respuestas[termino]["cantidad"] + 1
